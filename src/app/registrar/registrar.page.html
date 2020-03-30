@@ -1,0 +1,61 @@
+<ion-content>
+  <div style="margin: 16px;text-align: center;margin-top: 35%;">
+    <h1 class="type-text">Regístrate</h1>
+    <p class="type-text">Ingresa todos los datos requeridos</p>
+    <div class="input-group mb-3 content">
+      <input type="text" [(ngModel)]="name" class="form-control material" placeholder="Nombre">
+      <div class="input-group-prepend">
+        <div class="input-group-text icon-style" style="border-radius: 0px 8px 8px 0px;">
+          <i class="fa fa-user" aria-hidden="true"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="input-group mb-3 content">
+      <input type="number" [(ngModel)]="celular" class="form-control material" placeholder="Celular">
+      <div class="input-group-prepend">
+        <div class="input-group-text icon-style" style="border-radius: 0px 8px 8px 0px;">
+          <i class="fa fa-phone" aria-hidden="true"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="input-group mb-3 content">
+      <input type="text" [(ngModel)]="cedula" class="form-control material" placeholder="Cédula">
+      <div class="input-group-prepend">
+        <div class="input-group-text icon-style" style="border-radius: 0px 8px 8px 0px;">
+          <i class="fa fa-address-card-o" aria-hidden="true"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="input-group mb-3 content">
+      <input type="text" [(ngModel)]="address" class="form-control material" placeholder="Dirección">
+      <div class="input-group-prepend">
+        <div class="input-group-text icon-style" style="border-radius: 0px 8px 8px 0px;">
+          <i class="fa fa-address-card-o" aria-hidden="true"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="input-group mb-3 content">
+      <input type="email" [(ngModel)]="email" class="form-control material" placeholder="Correo eletrónico">
+      <div class="input-group-prepend">
+        <div class="input-group-text icon-style" style="border-radius: 0px 8px 8px 0px;">
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="input-group mb-3 content">
+      <input type="password" [(ngModel)]="password" style="background: #F5F5F5 0% 0% no-repeat padding-box;"
+        class="form-control material" placeholder="Contraseña">
+      <div class="input-group-prepend">
+        <div class="input-group-text icon-style" style="border-radius: 0px 8px 8px 0px;">
+          <i class="fa fa-key" aria-hidden="true"></i>
+        </div>
+      </div>
+    </div>
+    <ion-button id="btn-Sesion" color="primary" (click)="sendRegistro()">CONTINUAR</ion-button>
+  </div>
+</ion-content>

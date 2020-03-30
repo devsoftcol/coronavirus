@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+.img-logo{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15%;
+    margin-bottom: 10%;
+}
+h1 {
+    margin-top: 12%;
+    font-size: 30px;
+    font-weight: bold;
+}
+p{
+    font-size: 15px;
+    color: #777777;
+}
+::placeholder{
+    color: #000;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+.material{
+    width: 10%;
+    background: #F5F5F5 0% 0% no-repeat padding-box;
+    border-radius: 8px;
+    opacity: 1;
+    border-right-style: none;
+    color: #000;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+.icon-style{
+    border-left-style: none;
+    background: #F5F5F5 0% 0% no-repeat padding-box;
+    color: #000;
+}
+#btn-Sesion{
+width: 100%;
+height: 50px;
+background: transparent linear-gradient(270deg, rgb(4, 179, 191) 0%, rgb(3, 142, 166) 100%) 0% 0% no-repeat padding-box;
+box-shadow: 0px 3px 16px #0093E929;
+border-radius: 50px;
+opacity: 1;
+color: #F5F5F5;
+font-family: 'Roboto', sans-serif;
+font-weight: bold;
+font-size: 16px;
+outline:none;
+}
+
+#btn-register{
+    color: #0ABB04;
+    font-weight: bold;
+    background-color: transparent;
+    width: 100%;
+    height: 50px;
+   //box-shadow: 0px 3px 16px #0093E929;
+    border: 1px solid #0ABB04;
+    border-radius: 50px;
+    opacity: 1;
+    font-family: 'Roboto', sans-serif;
+}
+
+.type-text{
+    font-family: 'Roboto', sans-serif;
+}
+.link-cuenta{
+    text-align: center;
+    letter-spacing: 0;
+    color: #0093E9;
+    opacity: 1;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 10%;
+}
+ion-content{
+    --background: transparent url('../../assets/imgs/login.jpg') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}

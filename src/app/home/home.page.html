@@ -1,0 +1,85 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-icon style="zoom: 2.0;" (click)="openFirst()" name="menu"></ion-icon>
+  </ion-buttons>
+    <ion-buttons slot="end">
+      <img src="http://www.pngweb.co/png/wp-content/uploads/2017/09/pmg-logo.png" width="80"/>
+  </ion-buttons>
+    <ion-title>
+      Covid 19APP
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-menu side="start" menuId="first" type="overlay">
+  <ion-header>
+    <ion-toolbar color="dark">
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item routerLink="/news" routerDirection="forward">Noticias</ion-item>
+      <ion-item routerLink="/home" routerDirection="forward">Registrar Caso</ion-item>
+      <ion-item routerLink="/profile" routerDirection="forward">Perfil</ion-item>
+      <ion-item routerLink="/covid" routerDirection="forward">Que es el covid19?</ion-item>
+      <ion-item>Terminos & Condiciones</ion-item>
+      <ion-item color="light" (click)="logout()">Cerrar sesión</ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-router-outlet main></ion-router-outlet>
+
+<ion-content [fullscreen]="true">
+  <div id="slider">
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h1>Información Nacional</h1>
+        </div>
+        <div class="carousel-item" *ngFor="let item of info">
+          <h1>{{item.punto}} : <b>{{item.cant}}</b></h1>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+  <div id="mapa" #mapa></div>
+  <ion-fab vertical="bottom" horizontal="left" slot="fixed" class="ion-padding"  style="margin-bottom: 15%;">
+    <ion-fab-button class="primario">
+      <ion-icon name="add-outline"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button class="secundario" routerLink="/address" routerDirection="forward"><ion-icon name="create-outline"></ion-icon></ion-fab-button>
+      <ion-fab-button class="secundario" (click)="registraUbication()"><ion-icon name="locate-outline"></ion-icon></ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+</ion-content>
+
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button routerLink="/news" routerDirection="forward">
+      <ion-icon name="newspaper-outline"></ion-icon>
+      <ion-label>Noticias</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button routerLink="/home" routerDirection="root">
+      <ion-icon name="map"></ion-icon>
+      <ion-label>Registrar caso</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button routerLink="/profile" routerDirection="forward">
+      <ion-icon name="person-circle"></ion-icon>
+      <ion-label>Mi Perfil</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>

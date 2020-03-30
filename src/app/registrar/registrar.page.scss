@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+.img-logo{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15%;
+}
+h1 {
+    margin-top: 12%;
+    font-size: 30px;
+    font-weight: bold;
+}
+p{
+    font-size: 15px;
+    color: #777777;
+}
+::placeholder{
+    color: #000;
+    //font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+.material{
+    width: 10%;
+    background: #F5F5F5 0% 0% no-repeat padding-box;
+    border-radius: 8px;
+    opacity: 1;
+    border-right-style: none;
+    height: auto;
+    color: #000;
+    //font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+.icon-style{
+    border-left-style: none;
+    background: #F5F5F5 0% 0% no-repeat padding-box;
+    color: #000;
+}
+
+.type-text{
+    font-family: 'Roboto', sans-serif;
+}
+.link-cuenta{
+    text-align: center;
+    letter-spacing: 0;
+    color: #0093E9;
+    opacity: 1;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 10%;
+}
+.content{
+    margin-top: 7%;
+    height: 10%;
+}
+ion-content{
+    --background: transparent url('../../assets/imgs/registro.jpg') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}

@@ -1,0 +1,30 @@
+
+<ion-content>
+  <div style="margin: 16px;text-align: center;">
+    <img class="img-logo" src="../../../assets/imgs/logo.svg">
+   <!-- <h1 class="type-text">Iniciar Sesión</h1>-->
+    <!--<p class="type-text">Por favor diligencia el siguiente campo para poder iniciar sesión.</p>-->
+    <div class="input-group mb-3">
+        <input type="text" [(ngModel)]="cedula" class="form-control material" placeholder="Cédula">
+        <div class="input-group-prepend">
+          <div class="input-group-text icon-style" style="border-radius: 0px 8px 8px 0px;">
+                <i class="fa fa-address-card-o" aria-hidden="true"></i>
+          </div>
+        </div>
+    </div>
+
+    <div class="input-group mb-3">
+            <input type="password" [(ngModel)]="password" class="form-control material" placeholder="Contraseña">
+            <div class="input-group-prepend">
+              <div class="input-group-text icon-style" style="border-radius: 0px 8px 8px 0px;">
+                    <i class="fa fa-key" aria-hidden="true"></i>
+              </div>
+            </div>
+    </div>
+    <button id="btn-Sesion" (click)="login()">Iniciar Sesión</button><br><br>
+    <p>ó</p>
+    <button id="btn-register" routerLink="/registrar" routerDirection="root">Registrar</button>
+    
+    <p style="margin-top: 10%;">Al ingresar aceptas los términos y <br>condiciones de la app</p>
+</div>
+</ion-content>
